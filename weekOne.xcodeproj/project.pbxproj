@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C7E8845FE1D6737549665E7 /* Pods_weekOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B6D01C1387956487591B57 /* Pods_weekOne.framework */; };
 		CB23B314285980E3001A241F /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = CB23B313285980E3001A241F /* books.json */; };
 		CB23B31628598688001A241F /* booksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B31528598688001A241F /* booksModel.swift */; };
 		CB35AAA12856D39C00D307FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB35AAA02856D39C00D307FF /* AppDelegate.swift */; };
@@ -22,9 +23,12 @@
 		CB35AAC1285735A000D307FF /* mintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB35AAC0285735A000D307FF /* mintViewController.swift */; };
 		CBC099A328599E70008AE9DF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC099A128599E70008AE9DF /* CustomTableViewCell.swift */; };
 		CBC099A428599E70008AE9DF /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC099A228599E70008AE9DF /* CustomTableViewCell.xib */; };
+		CBC099AA2859E331008AE9DF /* MicrosoftTeams-image.png in Resources */ = {isa = PBXBuildFile; fileRef = CBC099A92859E331008AE9DF /* MicrosoftTeams-image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EDB4C2FE6234201ABD2362C /* Pods-weekOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weekOne.debug.xcconfig"; path = "Target Support Files/Pods-weekOne/Pods-weekOne.debug.xcconfig"; sourceTree = "<group>"; };
+		9D71AAEF78AB7F07453CE5B6 /* Pods-weekOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weekOne.release.xcconfig"; path = "Target Support Files/Pods-weekOne/Pods-weekOne.release.xcconfig"; sourceTree = "<group>"; };
 		CB23B31028596BA7001A241F /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CB23B313285980E3001A241F /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		CB23B31528598688001A241F /* booksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = booksModel.swift; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 		CB35AAC0285735A000D307FF /* mintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mintViewController.swift; sourceTree = "<group>"; };
 		CBC099A128599E70008AE9DF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		CBC099A228599E70008AE9DF /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		CBC099A92859E331008AE9DF /* MicrosoftTeams-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MicrosoftTeams-image.png"; path = "../../../../Downloads/MicrosoftTeams-image.png"; sourceTree = "<group>"; };
+		D1B6D01C1387956487591B57 /* Pods_weekOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weekOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +56,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7E8845FE1D6737549665E7 /* Pods_weekOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		348B3F07BF788443FDB2AAB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1B6D01C1387956487591B57 /* Pods_weekOne.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5960DCE42B92712944538655 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EDB4C2FE6234201ABD2362C /* Pods-weekOne.debug.xcconfig */,
+				9D71AAEF78AB7F07453CE5B6 /* Pods-weekOne.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CB35AA942856D39C00D307FF = {
 			isa = PBXGroup;
 			children = (
 				CB35AA9F2856D39C00D307FF /* weekOne */,
 				CB35AA9E2856D39C00D307FF /* Products */,
+				5960DCE42B92712944538655 /* Pods */,
+				348B3F07BF788443FDB2AAB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +113,7 @@
 				CB35AAC0285735A000D307FF /* mintViewController.swift */,
 				CB35AABA28571C2800D307FF /* redViewController.swift */,
 				CB35AAA92856D39E00D307FF /* Assets.xcassets */,
+				CBC099A92859E331008AE9DF /* MicrosoftTeams-image.png */,
 				CB35AAAB2856D39E00D307FF /* LaunchScreen.storyboard */,
 				CB35AAAE2856D39E00D307FF /* Info.plist */,
 				CB35AAB82857128800D307FF /* orangeViewController.swift */,
@@ -103,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB35AAB12856D39E00D307FF /* Build configuration list for PBXNativeTarget "weekOne" */;
 			buildPhases = (
+				DD6D335EA49F92C95DEF3844 /* [CP] Check Pods Manifest.lock */,
 				CB35AA992856D39C00D307FF /* Sources */,
 				CB35AA9A2856D39C00D307FF /* Frameworks */,
 				CB35AA9B2856D39C00D307FF /* Resources */,
+				CFBD6AE53B7D42FFFF3FDB5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,12 +186,55 @@
 				CB23B314285980E3001A241F /* books.json in Resources */,
 				CB35AAAD2856D39E00D307FF /* LaunchScreen.storyboard in Resources */,
 				CB35AAAA2856D39E00D307FF /* Assets.xcassets in Resources */,
+				CBC099AA2859E331008AE9DF /* MicrosoftTeams-image.png in Resources */,
 				CBC099A428599E70008AE9DF /* CustomTableViewCell.xib in Resources */,
 				CB35AAA82856D39C00D307FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CFBD6AE53B7D42FFFF3FDB5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weekOne/Pods-weekOne-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weekOne/Pods-weekOne-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weekOne/Pods-weekOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD6D335EA49F92C95DEF3844 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weekOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB35AA992856D39C00D307FF /* Sources */ = {
@@ -320,6 +392,7 @@
 		};
 		CB35AAB22856D39E00D307FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EDB4C2FE6234201ABD2362C /* Pods-weekOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,6 +420,7 @@
 		};
 		CB35AAB32856D39E00D307FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D71AAEF78AB7F07453CE5B6 /* Pods-weekOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

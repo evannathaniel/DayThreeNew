@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 struct Result: Codable {
     let data: [ResultItem]
@@ -13,6 +14,6 @@ struct Result: Codable {
 
 struct ResultItem: Codable {
     let title: String
-    let author: String
-    let year:  Int
+    let authors: [String]
+    let thumbnailUrl:  String?
 }

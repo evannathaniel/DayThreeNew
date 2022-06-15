@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import Alamofire
+import AlamofireImage
 class brownViewController: UIViewController {
 
     
@@ -67,6 +68,8 @@ class brownViewController: UIViewController {
 
 extension brownViewController: UITableViewDelegate, UITableViewDataSource {
     
+    
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let result = result{
             return result.data.count
@@ -77,15 +80,30 @@ extension brownViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let title = result?.data[indexPath.row].title
-        let author = result?.data[indexPath.row].author
-        let year = result?.data[indexPath.row].year
         
+        let authors = result?.data[indexPath.row].authors
+        
+        var image = result?.data[indexPath.row].thumbnailUrl
+        
+        
+      //  print(image)
          let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
         
         cell.titleLabel.text = title
-        cell.authorLabel.text = author
-        cell.yearLabel.text = String(year ?? 0)
+        cell.authorLabel.text = authors?[0]
+        cell.bookCover.af.setImage(withURL: URL(string: result?.data[indexPath.row].thumbnailUrl ?? "https://picsum.photos/id/237/200/300")!)
+           // AF.download(image ).responseData { response in
+             //   if let data = response.value{
+             //       cell.bookCover.image = UIImage(data: data)
+              //  }
+           //}
         
+            
+        
+        
+            
+        
+       // }
         
         
         return cell

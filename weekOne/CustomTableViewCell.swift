@@ -11,7 +11,8 @@ class CustomTableViewCell: UITableViewCell {
     
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var authorLabel: UILabel!
-    @IBOutlet var yearLabel: UILabel!
+    @IBOutlet var bookCover: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
